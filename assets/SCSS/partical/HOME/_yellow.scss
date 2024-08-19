@@ -1,0 +1,67 @@
+#yellow {
+  background-color: yellow;
+  padding: 40px 0;
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+   
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .col-12 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 150px;
+      align-items: center;
+      text-align: center;
+
+      .yellowwords {
+        h6 {
+          font-size: 44px;
+          font-weight: bolder;
+        }
+      }
+
+      button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: bold;
+
+        cursor: pointer;
+        transition: background-color white;
+
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+
+      i.fa-solid.fa-arrow-right {
+        margin-left: 10px;
+        color: black;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #yellow .col-12 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #yellow button,
+  #yellow i {
+    font-size: 14px;
+  }
+}

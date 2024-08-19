@@ -1,0 +1,120 @@
+#header{
+    .container{
+    .adidanheader{
+        width: 100%;
+        display: flex;
+       
+      
+      ul{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+    }
+    ul li ul.dropdown li{
+        display: block;
+    
+    }
+    ul li ul.dropdown{
+        width: 100%;
+        text-decoration: underline;
+        position: absolute;
+        z-index: 999;
+        display: none;
+    
+    }
+    ul li a:hover{
+        background: gray;
+    
+    }
+    ul li:hover ul.dropdown{
+        display:block
+    }
+        li{
+            cursor: pointer;
+        }
+        button{
+            width: 1.5%;
+            padding: 0;
+            border: 0;
+            background: transparent;
+            img{
+                width: 100%;
+
+            }
+        }
+      }
+
+      
+        
+    }
+.mainheader{
+    
+    width: 100%;
+    display: flex;
+   .col-middle{
+    
+    display: flex;
+    align-items: flex-end;
+   }
+    .icon{
+        svg{
+            width:25%;
+        }
+    }
+    ul{width: 100%;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        gap: 3%;
+
+    }
+    
+}
+.col-end{
+    display: flex;
+    align-items: flex-end;
+ .btn{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    input{
+        padding: 9px;
+    }
+    i{
+        font-size: 24px;
+       
+    }
+ }
+}
+}
+      
+@media (max-width: 600px) {
+    .mainheader {
+        ul {
+            display: none; 
+
+            li {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .icon, .btn-first {
+            display: none; 
+        }
+    }
+
+    .menu-toggle {
+        display: block;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+
+        &:hover {
+            background-color: #444;
+        }
+    }
+}

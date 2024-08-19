@@ -1,0 +1,59 @@
+#blackbackround {
+    background-color: #000;
+    color: #fff;
+    padding: 120px 0;
+  
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  
+    .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  
+      h6 {
+        font-size: 34px;
+        margin-bottom: 80px;
+        font-weight: bold;
+        font-weight: 700;
+      }
+  
+      p {
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 80px;
+        max-width: 800px;
+      }
+  
+      svg {
+        margin-top: 20px;
+        width: 41px;
+        height: 40px;
+      }
+    }
+  }
+  
+  @media (max-width: 992px) {
+    #blackbackround .container {
+      padding: 10px;
+    }
+  
+    #blackbackround .row p {
+      max-width: 95%; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #blackbackround {
+      padding: 20px 0;
+    }
+  
+    #blackbackround .row {
+      padding: 0 15px;
+    }
+  }
+  

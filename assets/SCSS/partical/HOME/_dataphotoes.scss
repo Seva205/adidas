@@ -1,0 +1,40 @@
+#dataphotoes{
+    .row{
+        display: flex;
+        }
+    }
+
+.shop:hover{
+    width: fit-content;
+    background-color: black;
+    color: white;
+    cursor:pointer
+    
+
+}
+
+
+
+@media (max-width: 992px) {
+    #dataphotoes .col-3 {
+        width: 48%; 
+        margin: 1%;
+    }
+}
+
+@media (max-width: 768px) {
+    #dataphotoes .row {
+        justify-content: center;
+    }
+
+    #dataphotoes .row col-3 {
+        width: 98%; 
+        margin: 1% 0;
+    }
+}
+
+@media (max-width: 910px) {
+    #dataphotoes .col-3.block {
+        display: block;
+    }
+}

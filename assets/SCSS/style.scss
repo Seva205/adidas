@@ -1,0 +1,66 @@
+@import "./Layout/header";
+@import "./partical/HOME/bigadidas";
+@import "./partical/HOME/newarrivals";
+@import "./partical/HOME/dataphotoes";
+@import "./partical/HOME/popularright";
+@import "./partical/HOME/listfour";
+@import "./partical/HOME/blackbackround";
+@import "./partical/HOME/yellow";
+@import "./partical/HOME/footerlist";
+@import "./Layout/footer";
+
+*{
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    }
+    
+    .container{
+        margin: 0 auto;
+        max-width: 1550px;
+    }
+    .row{
+        width: 100%;
+        display: flex;
+        // flex-wrap: wrap;
+    }
+    .col-2{
+        width: calc(100% / 12 * 2);
+    }
+    .col-6{
+        width: calc(100% / 12 * 6);
+    }
+    .col-4{
+        width: calc(100% / 12 * 4);
+    }
+    .col-3{
+        width: calc(100% / 12 * 3);
+    }
+    .col-12{
+        width: calc(100%/12 * 12);
+    }
+    @media (min-width: 576px) {
+        .container {
+         max-width: 540px;
+       }
+     }
+     @media (min-width: 768px) {
+        .container {
+         max-width: 720px;
+       }
+     }
+     @media (min-width: 992px) {
+       .container {
+         max-width: 960px;
+       }
+     }
+     @media (min-width: 1200px) {
+       .container {
+         max-width: 1140px;
+       }
+     }
+     @media (min-width: 1400px) {
+    .container {
+         max-width: 1550px;
+       }
+     }

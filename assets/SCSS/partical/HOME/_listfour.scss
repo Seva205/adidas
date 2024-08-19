@@ -1,0 +1,23 @@
+#list {
+  .lists {
+    display: flex;
+    flex-grow: 20px;
+    gap: 200px;
+
+    ul li {
+      font-size: 19px;
+      word-spacing: 2px;
+      column-gap: 50px;
+    }
+  }
+}
+@media (max-width: 950px) {
+  .nextlist {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .secontlist {
+    display: block;
+  }
+}

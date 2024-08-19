@@ -1,0 +1,63 @@
+#popularright {
+  .container {
+    max-width: 1550px;
+    margin: auto;
+    padding: 0 20px;
+  }
+
+  .row {
+    display: flex;
+
+    text-align: center;
+
+    .toprg {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #000000;
+      
+    }
+
+    .col-4 {
+      // padding: 100px;
+
+      text-decoration: underline;
+      margin: 10px;
+
+      div {
+        letter-spacing: 8px;
+        padding: 40px;
+        
+        font-weight: bolder;
+        color: black;
+        font-size: 40px;
+        line-height: 40px;
+        text-transform: lowercase;
+      }
+
+      &:hover {
+        color: black;
+        text-decoration: underline  bolder  black;
+        
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #popularright .row .col-4 {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  #popularright .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #popularright .row .col-4 {
+    width: 90%;
+  }
+}
